@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Запишите четвероногого на стрижку!
+{% endblock %}
+
+
+{% block content %}
+<h1 align="center">Запишите четвероногого на стрижку!</h1>
+
+<form method="post" class="form-control">
+    <input type="text" name="name" placeholder="Введите имя" class="form-control"><br>
+    <input type="text" name="surname" placeholder="Введите фамилию" class="form-control"><br>
+    <input type="text" name="breed" placeholder="Введите породу собаки" class="form-control"><br>
+    <input type="date" name="datе" placeholder="Введите удобную дату" class="form-control"><br>
+    <input type="text" name="comment" placeholder="Пожелания" class="form-control"><br>
+    <button class="btn btn-success" type="submit">Записаться</button>
+</form>
+{% endblock %}
